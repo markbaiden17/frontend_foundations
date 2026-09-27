@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin-right: 30px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr;
+}
