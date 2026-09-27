@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Employee Registration Form</h1>
+    </header>
+
+    <nav>
+        <a href="employee.html">View Employees</a>
+    </nav>
+
+    <div>
+        <form action="employee.html" method="post">
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div>
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" required>
+            </div>
+            
+            <div>
+                <label for="department">Select Department</label>
+                <select id="department" name="department" required>
+                    <option value="">-- Select Department --</option>
+                    <option value="it">Information Technology</option>
+                    <option value="hr">Human Resources</option>
+                    <option value="finance">Finance</option>
+                    <option value="ops">Operations</option>
+                </select>
+            </div>
+            
+            <div>
+                <fieldset>
+                    <legend for="employment-type">Employment Type</legend>
+
+                    <input type="radio" id="full-time" name="employment-type" value="full-time" required>
+                    <label for="full-time">Full Time</label>
+
+                    <input type="radio" id="part-time" name="employment-type" value="part-time" required>
+                    <label for="part-time">Part Time</label>
+
+                    <input type="radio" id="intern" name="employment-type" value="intern" required>
+                    <label for="intern">Intern</label>
+                </fieldset>
+            </div>
+            
+            <div>
+                <label for="profile-picture">Profile Picture</label>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required>
+            </div>
+            
+            <div>
+                <label for="probio">Professional Bio</label>
+                <textarea id="probio" name="probio" placeholder="Write a brief professional bio..." required></textarea>
+            </div>
+
+            <div>
+                <label for="tncs">Terms and Conditions</label>
+                <input type="checkbox" id="tncs" name="tncs" value="agree" required>
+                <label for="tncs">I agree to the terms and conditions</label>
+            </div>            
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
